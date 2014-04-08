@@ -29,3 +29,5 @@ $ ./sslmail.sh foobar.com
 # [Open  ] mx6.foobar.com:995 (1.2.3.4)
 # [Safe  ] mx6.foobar.com:995
 ```
+
+~DO NOT HARM~
