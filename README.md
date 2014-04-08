@@ -2,6 +2,7 @@ openmagic
 =========
 
 OpenSSL TLS heartbeat read overrun (CVE-2014-0160)
+
 (C) ISGroup SRL http://www.isgroup.biz
 
 Written by Francesco Ongaro (https://linkedin.com/in/ongaro)
