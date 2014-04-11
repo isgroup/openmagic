@@ -5,11 +5,6 @@
 # Written by Francesco `ascii` Ongaro - 20140218
 # (C) ISGroup SRL - http://www.isgroup.biz
 #
-# 10-04-2014 Frodo Larik
-# - Check all MX records of a domain
-# - Sort by MX priority
-# - Require domainname as argument
-#
 # 11-04-2014 Francesco Ongaro
 # - Refactoring and bump to 0.3
 
