@@ -31,3 +31,8 @@ $ ./sslmail.sh foobar.com
 ```
 
 ~DO NOT HARM~
+
+Contribute to openmagic
+=========
+
+If you want to submit or propose a feature feel free to open an issue https://github.com/isgroup-srl/openmagic/issues.
