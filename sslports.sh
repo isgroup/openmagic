@@ -24,9 +24,8 @@ if [ ! -z "$2" ]; then
 fi
 
 a $TARGET | while read HOST; do
-	echo "# [ICSSL ] $PRIO $HOST ($TARGET)"
-	sslports $MAX | while read $PORT; do
-		echo "# [ICSSL ] $HOST $PORT ($TARGET)"
+	echo "# [ICSSL ] $HOST ($TARGET)"
+	sslports $MAX | while read PORT; do
 		./ssltest.sh $HOST $PORT
 	done
 done
