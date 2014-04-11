@@ -16,16 +16,22 @@
 . ./common.sh
 
 if [ $# -lt 1 ]; then
-	echo "Usage: $0 domain"
+	echo "Usage: $0 hostname [top_ports]"
+	echo "       $0 ip [top_ports]"
 	exit 0
 fi
 
-DOMAIN=$1
+TARGET=$1
 
-mx $DOMAIN | while read PRIO HOST; do
-	echo "# [MX    ] $PRIO $HOST ($DOMAIN)"
-	for PORT in 465 585 993 995; do
-		echo "# [MXPORT] $HOST $PORT ($DOMAIN)"
+MAX=20
+if [ ! -z "$2" ]; then
+	MAX=$2
+fi
+
+a $TARGET | while read HOST; do
+	echo "# [ICSSL ] $PRIO $HOST ($TARGET)"
+	sslports $MAX | while read $PORT; do
+		echo "# [ICSSL ] $HOST $PORT ($TARGET)"
 		./ssltest.sh $HOST $PORT
 	done
 done

@@ -1,7 +1,9 @@
 #!/usr/bin/python
-
 # Quick and dirty demonstration of CVE-2014-0160 by Jared Stafford (jspenguin@jspenguin.org)
 # The author disclaims copyright to this source code.
+#
+# 20140218 Francesco Ongaro
+# - Added the -o parameter to binary dump the response to a specified file
 
 import sys
 import struct
