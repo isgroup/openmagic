@@ -36,3 +36,15 @@ Contribute to openmagic
 --------
 
 If you want to submit or propose a feature feel free to open an issue https://github.com/isgroup-srl/openmagic/issues.
+
+Requirements
+--------
+
+You need in your $PATH the following dependencies: 
+
+- bash
+- python2.6
+- nmap
+- dig
+- torify
+- tor
