@@ -36,6 +36,20 @@ $ ./sslmail.sh foobar.com
 # [Safe  ] mx6.foobar.com:995
 ```
 
+Test 30 most common SSL ports on a target:
+
+```
+$ ./sslports.sh www.foobar.com 30
+# [ICSSL ] 1.2.3.6 (www.foobar.com)
+# [Closed] 1.2.3.6:443 (1.2.3.6)
+# [Closed] 1.2.3.6:21 (1.2.3.6)
+# [Open  ] 1.2.3.6:22 (1.2.3.6)
+# [Safe  ] 1.2.3.6:22 (1.2.3.6)
+[..]
+# [Closed] 1.2.3.6:2002 (1.2.3.6)
+# [Closed] 1.2.3.6:5000 (1.2.3.6)
+```
+
 Kill all the running threads:
 
 ```
