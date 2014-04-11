@@ -1,7 +1,13 @@
 openmagic
 =========
 
-OpenSSL TLS heartbeat read overrun (CVE-2014-0160)
+openmagic can assist you in the automating testing and exploiting of systems vulnerable to the *OpenSSL TLS heartbeat read overrun (CVE-2014-0160)*. The base module wraps a modified version of the "ssltest.py" program by Jared Stafford and provides the following additional features:
+
+- Save the leaked data in a raw format for later analisys
+- Resolve the IP so that only one DNS query is executed
+- Use NMAP to check if the target service is alive (or filtered/closed)
+- Check if the target is vulnerable
+- Iterate and sleep between multiple requests
 
 (C) ISGroup SRL http://www.isgroup.biz
 
