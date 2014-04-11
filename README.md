@@ -36,6 +36,18 @@ $ ./sslmail.sh foobar.com
 # [Safe  ] mx6.foobar.com:995
 ```
 
+Kill all the running threads:
+
+```
+ps aux | grep ./ssltest.sh | awk '{print $2}' | xargs kill
+```
+
+Scan a large CSV file:
+
+```
+tail -n 1000 top-1m.csv | sort -r | cut -d "," -f2 | xargs -P 20 -I {} ./ssltest.sh {} 443
+```
+
 ~DO NOT HARM~
 
 Contribute to openmagic
